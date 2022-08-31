@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Colors.css">
+    <title>Snowbund</title>
+</head>
+<body>
+    <!--First page section-->
+    <section class="front_page">
+        <nav>
+        <a href="First_page.html"><img src="images/Snow.png" alt="logo" class="logo"></a>
+        <div class="navbar" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>        
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="front_text">
+        <h1>Hi,<br>
+        I'm <span>Snow</span>,<br>  
+    </h1>
+    <p>Front-end developer</p>
+    
+    <div class="front_btn">
+        <a href="#my_work"><span></span>View my work</a>
+    </div></div>
+    </section>
+    <!--Second page. My Work-->
+    <section class="my_work" id="my_work">
+        <h2>My work</h2>
+        <p>What I already did</p>
+        <div class="row">
+            <div class="my_col">
+                <img src="Images/first_try.PNG" alt="">
+                <div class="layer">
+                <h3>First page</h3>
+                <p>Just HTML and CSS</p>
+                </div>
+            </div>
+            <div class="my_col">
+                <img src="Images/Bootstrap.PNG" alt="">
+                <div class="layer">
+                <h3>Second Page</h3>
+                <p>Done with Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--JavaScript for the menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
